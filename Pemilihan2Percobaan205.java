@@ -16,7 +16,7 @@ public class Pemilihan2Percobaan205 {
         System.out.println("masukkan angka dari menu yang dipilih = ");
         pilihan_menu = Absen.nextInt();
         Absen.nextLine();
-
+        
         System.out.print("Apakah punya member (y/n) ? = ");
         member = Absen.nextLine();
         System.out.println("-------------------------------------");
@@ -39,6 +39,15 @@ public class Pemilihan2Percobaan205 {
             } else {
                 System.out.println("Masukkan pilihan menu dengan benar");
                 return; // Menghentikan eksekusi lebih lanjut jika pilihan salah
+            }
+            System.out.println("Pilih pembayaran (cash/qris)");
+            pembayaran = Absen.nextLine();
+
+            if (pembayaran.equalsIgnoreCase("qris")) {
+                harga -= 1000;
+                
+            } else {
+                System.out.println("Oke mas");
             }
             
             // Menghitung total bayar setelah diskon
@@ -66,6 +75,15 @@ public class Pemilihan2Percobaan205 {
 
             }
 
+            System.out.println("Pilih pembayaran (cash/qris)");
+            pembayaran = Absen.nextLine();
+                
+                if (pembayaran.equalsIgnoreCase("qris")) {
+                    harga -= 1000;
+                    
+                } else {
+                    System.out.println("Oke mas");
+                }
                 //Menghitung total bayar
                 System.out.println("Total bayar = " + harga);    
                 
